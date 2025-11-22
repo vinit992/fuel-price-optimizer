@@ -10,6 +10,9 @@ COPY fuel_price_optimizer.py .
 COPY oil_retail_history.csv .
 COPY today_example.json .
 
+# Add your uv install script (optional, informational only)
+COPY install_uv.sh .
+
 # Create environment + install dependencies
 RUN uv sync --frozen
 
